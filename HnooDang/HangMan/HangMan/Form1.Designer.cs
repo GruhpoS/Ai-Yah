@@ -161,237 +161,341 @@
             // 
             // W
             // 
-            this.W.Location = new System.Drawing.Point(265, 613);
+            this.W.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.W.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.W.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.W.Location = new System.Drawing.Point(265, 608);
             this.W.Name = "W";
             this.W.Size = new System.Drawing.Size(41, 33);
             this.W.TabIndex = 58;
             this.W.Text = "W";
-            this.W.UseVisualStyleBackColor = true;
+            this.W.UseVisualStyleBackColor = false;
+            this.W.Click += new System.EventHandler(this.W_Click_1);
             // 
             // X
             // 
-            this.X.Location = new System.Drawing.Point(328, 613);
+            this.X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.X.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.X.Location = new System.Drawing.Point(328, 608);
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(41, 33);
             this.X.TabIndex = 57;
             this.X.Text = "X";
-            this.X.UseVisualStyleBackColor = true;
+            this.X.UseVisualStyleBackColor = false;
+            this.X.Click += new System.EventHandler(this.X_Click_1);
             // 
             // Y
             // 
-            this.Y.Location = new System.Drawing.Point(394, 613);
+            this.Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Y.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Y.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Y.Location = new System.Drawing.Point(394, 608);
             this.Y.Name = "Y";
             this.Y.Size = new System.Drawing.Size(41, 33);
             this.Y.TabIndex = 56;
             this.Y.Text = "Y";
-            this.Y.UseVisualStyleBackColor = true;
+            this.Y.UseVisualStyleBackColor = false;
+            this.Y.Click += new System.EventHandler(this.Y_Click_1);
             // 
             // Z
             // 
-            this.Z.Location = new System.Drawing.Point(458, 613);
+            this.Z.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Z.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Z.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Z.Location = new System.Drawing.Point(458, 608);
             this.Z.Name = "Z";
             this.Z.Size = new System.Drawing.Size(41, 33);
             this.Z.TabIndex = 55;
             this.Z.Text = "Z";
-            this.Z.UseVisualStyleBackColor = true;
+            this.Z.UseVisualStyleBackColor = false;
+            this.Z.Click += new System.EventHandler(this.Z_Click_1);
             // 
             // V
             // 
-            this.V.Location = new System.Drawing.Point(200, 613);
+            this.V.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.V.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.V.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.V.Location = new System.Drawing.Point(200, 608);
             this.V.Name = "V";
             this.V.Size = new System.Drawing.Size(41, 33);
             this.V.TabIndex = 54;
             this.V.Text = "V";
-            this.V.UseVisualStyleBackColor = true;
+            this.V.UseVisualStyleBackColor = false;
+            this.V.Click += new System.EventHandler(this.V_Click_1);
             // 
             // T
             // 
-            this.T.Location = new System.Drawing.Point(455, 558);
+            this.T.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.T.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.T.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.T.Location = new System.Drawing.Point(455, 553);
             this.T.Name = "T";
             this.T.Size = new System.Drawing.Size(41, 33);
             this.T.TabIndex = 53;
             this.T.Text = "T";
-            this.T.UseVisualStyleBackColor = true;
+            this.T.UseVisualStyleBackColor = false;
+            this.T.Click += new System.EventHandler(this.T_Click_1);
             // 
             // U
             // 
-            this.U.Location = new System.Drawing.Point(517, 558);
+            this.U.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.U.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.U.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.U.Location = new System.Drawing.Point(517, 553);
             this.U.Name = "U";
             this.U.Size = new System.Drawing.Size(41, 33);
             this.U.TabIndex = 52;
             this.U.Text = "U";
-            this.U.UseVisualStyleBackColor = true;
+            this.U.UseVisualStyleBackColor = false;
+            this.U.Click += new System.EventHandler(this.U_Click_1);
             // 
             // P
             // 
-            this.P.Location = new System.Drawing.Point(200, 558);
+            this.P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.P.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.P.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.P.Location = new System.Drawing.Point(200, 553);
             this.P.Name = "P";
             this.P.Size = new System.Drawing.Size(41, 33);
             this.P.TabIndex = 51;
             this.P.Text = "P";
-            this.P.UseVisualStyleBackColor = true;
+            this.P.UseVisualStyleBackColor = false;
+            this.P.Click += new System.EventHandler(this.P_Click_1);
             // 
             // Q
             // 
-            this.Q.Location = new System.Drawing.Point(263, 558);
+            this.Q.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.Q.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Q.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.Q.Location = new System.Drawing.Point(263, 553);
             this.Q.Name = "Q";
             this.Q.Size = new System.Drawing.Size(41, 33);
             this.Q.TabIndex = 50;
             this.Q.Text = "Q";
-            this.Q.UseVisualStyleBackColor = true;
+            this.Q.UseVisualStyleBackColor = false;
+            this.Q.Click += new System.EventHandler(this.Q_Click_1);
             // 
             // R
             // 
-            this.R.Location = new System.Drawing.Point(329, 558);
+            this.R.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.R.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.R.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.R.Location = new System.Drawing.Point(329, 553);
             this.R.Name = "R";
             this.R.Size = new System.Drawing.Size(41, 33);
             this.R.TabIndex = 49;
             this.R.Text = "R";
-            this.R.UseVisualStyleBackColor = true;
+            this.R.UseVisualStyleBackColor = false;
+            this.R.Click += new System.EventHandler(this.R_Click_1);
             // 
             // S
             // 
-            this.S.Location = new System.Drawing.Point(393, 558);
+            this.S.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.S.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.S.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.S.Location = new System.Drawing.Point(393, 553);
             this.S.Name = "S";
             this.S.Size = new System.Drawing.Size(41, 33);
             this.S.TabIndex = 48;
             this.S.Text = "S";
-            this.S.UseVisualStyleBackColor = true;
+            this.S.UseVisualStyleBackColor = false;
+            this.S.Click += new System.EventHandler(this.S_Click_1);
             // 
             // O
             // 
-            this.O.Location = new System.Drawing.Point(135, 558);
+            this.O.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.O.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.O.Location = new System.Drawing.Point(135, 553);
             this.O.Name = "O";
             this.O.Size = new System.Drawing.Size(41, 33);
             this.O.TabIndex = 47;
             this.O.Text = "O";
-            this.O.UseVisualStyleBackColor = true;
+            this.O.UseVisualStyleBackColor = false;
+            this.O.Click += new System.EventHandler(this.O_Click_1);
             // 
             // M
             // 
-            this.M.Location = new System.Drawing.Point(455, 505);
+            this.M.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.M.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.M.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.M.Location = new System.Drawing.Point(455, 500);
             this.M.Name = "M";
             this.M.Size = new System.Drawing.Size(41, 33);
             this.M.TabIndex = 46;
             this.M.Text = "M";
-            this.M.UseVisualStyleBackColor = true;
+            this.M.UseVisualStyleBackColor = false;
+            this.M.Click += new System.EventHandler(this.M_Click_1);
             // 
             // N
             // 
-            this.N.Location = new System.Drawing.Point(517, 505);
+            this.N.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.N.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.N.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.N.Location = new System.Drawing.Point(517, 500);
             this.N.Name = "N";
             this.N.Size = new System.Drawing.Size(41, 33);
             this.N.TabIndex = 45;
             this.N.Text = "N";
-            this.N.UseVisualStyleBackColor = true;
+            this.N.UseVisualStyleBackColor = false;
+            this.N.Click += new System.EventHandler(this.N_Click_1);
             // 
             // I
             // 
-            this.I.Location = new System.Drawing.Point(200, 505);
+            this.I.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.I.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.I.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.I.Location = new System.Drawing.Point(200, 500);
             this.I.Name = "I";
             this.I.Size = new System.Drawing.Size(41, 33);
             this.I.TabIndex = 44;
             this.I.Text = "I";
-            this.I.UseVisualStyleBackColor = true;
+            this.I.UseVisualStyleBackColor = false;
+            this.I.Click += new System.EventHandler(this.I_Click_1);
             // 
             // J
             // 
-            this.J.Location = new System.Drawing.Point(263, 505);
+            this.J.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.J.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.J.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.J.Location = new System.Drawing.Point(263, 500);
             this.J.Name = "J";
             this.J.Size = new System.Drawing.Size(41, 33);
             this.J.TabIndex = 43;
             this.J.Text = "J";
-            this.J.UseVisualStyleBackColor = true;
+            this.J.UseVisualStyleBackColor = false;
+            this.J.Click += new System.EventHandler(this.J_Click_1);
             // 
             // K
             // 
-            this.K.Location = new System.Drawing.Point(329, 505);
+            this.K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.K.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.K.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.K.Location = new System.Drawing.Point(329, 500);
             this.K.Name = "K";
             this.K.Size = new System.Drawing.Size(41, 33);
             this.K.TabIndex = 42;
             this.K.Text = "K";
-            this.K.UseVisualStyleBackColor = true;
+            this.K.UseVisualStyleBackColor = false;
+            this.K.Click += new System.EventHandler(this.K_Click_1);
             // 
             // L
             // 
-            this.L.Location = new System.Drawing.Point(393, 505);
+            this.L.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.L.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.L.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.L.Location = new System.Drawing.Point(393, 500);
             this.L.Name = "L";
             this.L.Size = new System.Drawing.Size(41, 33);
             this.L.TabIndex = 41;
             this.L.Text = "L";
-            this.L.UseVisualStyleBackColor = true;
+            this.L.UseVisualStyleBackColor = false;
+            this.L.Click += new System.EventHandler(this.L_Click_1);
             // 
             // H
             // 
-            this.H.Location = new System.Drawing.Point(135, 505);
+            this.H.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.H.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.H.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.H.Location = new System.Drawing.Point(135, 500);
             this.H.Name = "H";
             this.H.Size = new System.Drawing.Size(41, 33);
             this.H.TabIndex = 40;
             this.H.Text = "H";
-            this.H.UseVisualStyleBackColor = true;
+            this.H.UseVisualStyleBackColor = false;
+            this.H.Click += new System.EventHandler(this.H_Click_1);
             // 
             // F
             // 
-            this.F.Location = new System.Drawing.Point(455, 449);
+            this.F.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.F.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.F.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.F.Location = new System.Drawing.Point(455, 444);
             this.F.Name = "F";
             this.F.Size = new System.Drawing.Size(41, 33);
             this.F.TabIndex = 39;
             this.F.Text = "F";
-            this.F.UseVisualStyleBackColor = true;
+            this.F.UseVisualStyleBackColor = false;
+            this.F.Click += new System.EventHandler(this.F_Click_1);
             // 
             // G
             // 
-            this.G.Location = new System.Drawing.Point(517, 449);
+            this.G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.G.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.G.Location = new System.Drawing.Point(517, 444);
             this.G.Name = "G";
             this.G.Size = new System.Drawing.Size(41, 33);
             this.G.TabIndex = 38;
             this.G.Text = "G";
-            this.G.UseVisualStyleBackColor = true;
+            this.G.UseVisualStyleBackColor = false;
+            this.G.Click += new System.EventHandler(this.G_Click_1);
             // 
             // B
             // 
-            this.B.Location = new System.Drawing.Point(200, 449);
+            this.B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.B.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.B.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.B.Location = new System.Drawing.Point(200, 444);
             this.B.Name = "B";
             this.B.Size = new System.Drawing.Size(41, 33);
             this.B.TabIndex = 37;
             this.B.Text = "B";
-            this.B.UseVisualStyleBackColor = true;
+            this.B.UseVisualStyleBackColor = false;
+            this.B.Click += new System.EventHandler(this.B_Click_1);
             // 
             // C
             // 
-            this.C.Location = new System.Drawing.Point(263, 449);
+            this.C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.C.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.C.Location = new System.Drawing.Point(263, 444);
             this.C.Name = "C";
             this.C.Size = new System.Drawing.Size(41, 33);
             this.C.TabIndex = 36;
             this.C.Text = "C";
-            this.C.UseVisualStyleBackColor = true;
+            this.C.UseVisualStyleBackColor = false;
+            this.C.Click += new System.EventHandler(this.C_Click_1);
             // 
             // D
             // 
-            this.D.Location = new System.Drawing.Point(329, 449);
+            this.D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.D.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.D.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.D.Location = new System.Drawing.Point(329, 444);
             this.D.Name = "D";
             this.D.Size = new System.Drawing.Size(41, 33);
             this.D.TabIndex = 35;
             this.D.Text = "D";
-            this.D.UseVisualStyleBackColor = true;
+            this.D.UseVisualStyleBackColor = false;
+            this.D.Click += new System.EventHandler(this.D_Click_1);
             // 
             // E
             // 
-            this.E.Location = new System.Drawing.Point(393, 449);
+            this.E.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.E.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.E.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.E.Location = new System.Drawing.Point(393, 444);
             this.E.Name = "E";
             this.E.Size = new System.Drawing.Size(41, 33);
             this.E.TabIndex = 34;
             this.E.Text = "E";
-            this.E.UseVisualStyleBackColor = true;
+            this.E.UseVisualStyleBackColor = false;
+            this.E.Click += new System.EventHandler(this.E_Click_1);
             // 
             // A
             // 
-            this.A.Location = new System.Drawing.Point(135, 449);
+            this.A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
+            this.A.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.A.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.A.Location = new System.Drawing.Point(135, 444);
             this.A.Name = "A";
             this.A.Size = new System.Drawing.Size(41, 33);
             this.A.TabIndex = 33;
             this.A.Text = "A";
-            this.A.UseVisualStyleBackColor = true;
+            this.A.UseVisualStyleBackColor = false;
+            this.A.Click += new System.EventHandler(this.A_Click_2);
             // 
             // Form1
             // 
