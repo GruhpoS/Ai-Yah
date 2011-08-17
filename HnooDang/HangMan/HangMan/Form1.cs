@@ -312,12 +312,7 @@ namespace HangMan
 
         }
 
-        private void Level_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-       
+      
 
        
 
