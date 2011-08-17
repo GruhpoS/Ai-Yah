@@ -311,15 +311,7 @@ namespace HangMan
         {
 
         }
-<<<<<<< HEAD
 
-        private void Level_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-=======
->>>>>>> aa959fcb1f0fd2a637464621b44ae3022f753bad
-        
        
 
        
