@@ -135,19 +135,20 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Font = new System.Drawing.Font("Snap ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(169, 346);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(79, 29);
+            this.label4.Size = new System.Drawing.Size(98, 31);
             this.label4.TabIndex = 13;
             this.label4.Text = "label4";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
             this.label5.Location = new System.Drawing.Point(312, 403);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(35, 13);
+            this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 14;
             this.label5.Text = "label5";
             // 
@@ -164,263 +165,284 @@
             // W
             // 
             this.W.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.W.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.W.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.W.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.W.Location = new System.Drawing.Point(265, 608);
+            this.W.Location = new System.Drawing.Point(266, 608);
             this.W.Name = "W";
-            this.W.Size = new System.Drawing.Size(41, 33);
+            this.W.Size = new System.Drawing.Size(54, 53);
             this.W.TabIndex = 58;
             this.W.Text = "W";
             this.W.UseVisualStyleBackColor = false;
+            this.W.Click += new System.EventHandler(this.W_Click);
             // 
             // X
             // 
             this.X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.X.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.X.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.X.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.X.Location = new System.Drawing.Point(328, 608);
+            this.X.Location = new System.Drawing.Point(336, 608);
             this.X.Name = "X";
-            this.X.Size = new System.Drawing.Size(41, 33);
+            this.X.Size = new System.Drawing.Size(54, 53);
             this.X.TabIndex = 57;
             this.X.Text = "X";
             this.X.UseVisualStyleBackColor = false;
+            this.X.Click += new System.EventHandler(this.X_Click);
             // 
             // Y
             // 
             this.Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Y.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Y.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Y.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Y.Location = new System.Drawing.Point(394, 608);
+            this.Y.Location = new System.Drawing.Point(411, 608);
             this.Y.Name = "Y";
-            this.Y.Size = new System.Drawing.Size(41, 33);
+            this.Y.Size = new System.Drawing.Size(54, 53);
             this.Y.TabIndex = 56;
             this.Y.Text = "Y";
             this.Y.UseVisualStyleBackColor = false;
+            this.Y.Click += new System.EventHandler(this.Y_Click);
             // 
             // Z
             // 
             this.Z.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Z.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Z.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Z.Location = new System.Drawing.Point(458, 608);
+            this.Z.Location = new System.Drawing.Point(483, 608);
             this.Z.Name = "Z";
-            this.Z.Size = new System.Drawing.Size(41, 33);
+            this.Z.Size = new System.Drawing.Size(54, 53);
             this.Z.TabIndex = 55;
             this.Z.Text = "Z";
             this.Z.UseVisualStyleBackColor = false;
+            this.Z.Click += new System.EventHandler(this.Z_Click);
             // 
             // V
             // 
             this.V.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.V.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.V.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.V.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.V.Location = new System.Drawing.Point(200, 608);
+            this.V.Location = new System.Drawing.Point(197, 608);
             this.V.Name = "V";
-            this.V.Size = new System.Drawing.Size(41, 33);
+            this.V.Size = new System.Drawing.Size(53, 53);
             this.V.TabIndex = 54;
             this.V.Text = "V";
             this.V.UseVisualStyleBackColor = false;
+            this.V.Click += new System.EventHandler(this.V_Click);
             // 
             // T
             // 
             this.T.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.T.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.T.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.T.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.T.Location = new System.Drawing.Point(455, 553);
+            this.T.Location = new System.Drawing.Point(483, 553);
             this.T.Name = "T";
-            this.T.Size = new System.Drawing.Size(41, 33);
+            this.T.Size = new System.Drawing.Size(54, 49);
             this.T.TabIndex = 53;
             this.T.Text = "T";
             this.T.UseVisualStyleBackColor = false;
+            this.T.Click += new System.EventHandler(this.T_Click);
             // 
             // U
             // 
             this.U.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.U.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.U.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.U.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.U.Location = new System.Drawing.Point(517, 553);
+            this.U.Location = new System.Drawing.Point(554, 553);
             this.U.Name = "U";
-            this.U.Size = new System.Drawing.Size(41, 33);
+            this.U.Size = new System.Drawing.Size(56, 49);
             this.U.TabIndex = 52;
             this.U.Text = "U";
             this.U.UseVisualStyleBackColor = false;
+            this.U.Click += new System.EventHandler(this.U_Click);
             // 
             // P
             // 
             this.P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.P.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.P.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.P.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.P.Location = new System.Drawing.Point(200, 553);
+            this.P.Location = new System.Drawing.Point(197, 553);
             this.P.Name = "P";
-            this.P.Size = new System.Drawing.Size(41, 33);
+            this.P.Size = new System.Drawing.Size(53, 49);
             this.P.TabIndex = 51;
             this.P.Text = "P";
             this.P.UseVisualStyleBackColor = false;
+            this.P.Click += new System.EventHandler(this.P_Click);
             // 
             // Q
             // 
             this.Q.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.Q.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.Q.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Q.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Q.Location = new System.Drawing.Point(263, 553);
+            this.Q.Location = new System.Drawing.Point(266, 553);
             this.Q.Name = "Q";
-            this.Q.Size = new System.Drawing.Size(41, 33);
+            this.Q.Size = new System.Drawing.Size(54, 49);
             this.Q.TabIndex = 50;
             this.Q.Text = "Q";
             this.Q.UseVisualStyleBackColor = false;
+            this.Q.Click += new System.EventHandler(this.Q_Click);
             // 
             // R
             // 
             this.R.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.R.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.R.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.R.Location = new System.Drawing.Point(329, 553);
+            this.R.Location = new System.Drawing.Point(337, 553);
             this.R.Name = "R";
-            this.R.Size = new System.Drawing.Size(41, 33);
+            this.R.Size = new System.Drawing.Size(54, 49);
             this.R.TabIndex = 49;
             this.R.Text = "R";
             this.R.UseVisualStyleBackColor = false;
+            this.R.Click += new System.EventHandler(this.R_Click);
             // 
             // S
             // 
             this.S.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.S.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.S.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.S.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.S.Location = new System.Drawing.Point(393, 553);
+            this.S.Location = new System.Drawing.Point(410, 553);
             this.S.Name = "S";
-            this.S.Size = new System.Drawing.Size(41, 33);
+            this.S.Size = new System.Drawing.Size(54, 49);
             this.S.TabIndex = 48;
             this.S.Text = "S";
             this.S.UseVisualStyleBackColor = false;
+            this.S.Click += new System.EventHandler(this.S_Click);
             // 
             // O
             // 
             this.O.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.O.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.O.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.O.Location = new System.Drawing.Point(135, 553);
+            this.O.Location = new System.Drawing.Point(123, 553);
             this.O.Name = "O";
-            this.O.Size = new System.Drawing.Size(41, 33);
+            this.O.Size = new System.Drawing.Size(53, 49);
             this.O.TabIndex = 47;
             this.O.Text = "O";
             this.O.UseVisualStyleBackColor = false;
+            this.O.Click += new System.EventHandler(this.O_Click);
             // 
             // M
             // 
             this.M.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.M.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.M.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.M.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.M.Location = new System.Drawing.Point(455, 500);
+            this.M.Location = new System.Drawing.Point(483, 500);
             this.M.Name = "M";
-            this.M.Size = new System.Drawing.Size(41, 33);
+            this.M.Size = new System.Drawing.Size(54, 47);
             this.M.TabIndex = 46;
             this.M.Text = "M";
             this.M.UseVisualStyleBackColor = false;
+            this.M.Click += new System.EventHandler(this.M_Click);
             // 
             // N
             // 
             this.N.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.N.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.N.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.N.Location = new System.Drawing.Point(517, 500);
+            this.N.Location = new System.Drawing.Point(554, 500);
             this.N.Name = "N";
-            this.N.Size = new System.Drawing.Size(41, 33);
+            this.N.Size = new System.Drawing.Size(56, 47);
             this.N.TabIndex = 45;
             this.N.Text = "N";
             this.N.UseVisualStyleBackColor = false;
+            this.N.Click += new System.EventHandler(this.N_Click);
             // 
             // I
             // 
             this.I.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.I.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.I.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.I.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.I.Location = new System.Drawing.Point(200, 500);
+            this.I.Location = new System.Drawing.Point(197, 500);
             this.I.Name = "I";
-            this.I.Size = new System.Drawing.Size(41, 33);
+            this.I.Size = new System.Drawing.Size(53, 47);
             this.I.TabIndex = 44;
             this.I.Text = "I";
             this.I.UseVisualStyleBackColor = false;
+            this.I.Click += new System.EventHandler(this.I_Click);
             // 
             // J
             // 
             this.J.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.J.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.J.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.J.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.J.Location = new System.Drawing.Point(263, 500);
+            this.J.Location = new System.Drawing.Point(266, 500);
             this.J.Name = "J";
-            this.J.Size = new System.Drawing.Size(41, 33);
+            this.J.Size = new System.Drawing.Size(54, 47);
             this.J.TabIndex = 43;
             this.J.Text = "J";
             this.J.UseVisualStyleBackColor = false;
+            this.J.Click += new System.EventHandler(this.J_Click);
             // 
             // K
             // 
             this.K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.K.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.K.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.K.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.K.Location = new System.Drawing.Point(329, 500);
+            this.K.Location = new System.Drawing.Point(337, 500);
             this.K.Name = "K";
-            this.K.Size = new System.Drawing.Size(41, 33);
+            this.K.Size = new System.Drawing.Size(54, 47);
             this.K.TabIndex = 42;
             this.K.Text = "K";
             this.K.UseVisualStyleBackColor = false;
+            this.K.Click += new System.EventHandler(this.K_Click);
             // 
             // L
             // 
             this.L.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.L.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.L.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.L.Location = new System.Drawing.Point(393, 500);
+            this.L.Location = new System.Drawing.Point(410, 500);
             this.L.Name = "L";
-            this.L.Size = new System.Drawing.Size(41, 33);
+            this.L.Size = new System.Drawing.Size(54, 47);
             this.L.TabIndex = 41;
             this.L.Text = "L";
             this.L.UseVisualStyleBackColor = false;
+            this.L.Click += new System.EventHandler(this.L_Click);
             // 
             // H
             // 
             this.H.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.H.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.H.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.H.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.H.Location = new System.Drawing.Point(135, 500);
+            this.H.Location = new System.Drawing.Point(123, 500);
             this.H.Name = "H";
-            this.H.Size = new System.Drawing.Size(41, 33);
+            this.H.Size = new System.Drawing.Size(53, 47);
             this.H.TabIndex = 40;
             this.H.Text = "H";
             this.H.UseVisualStyleBackColor = false;
+            this.H.Click += new System.EventHandler(this.H_Click);
             // 
             // F
             // 
             this.F.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.F.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.F.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.F.Location = new System.Drawing.Point(455, 444);
+            this.F.Location = new System.Drawing.Point(483, 444);
             this.F.Name = "F";
-            this.F.Size = new System.Drawing.Size(41, 33);
+            this.F.Size = new System.Drawing.Size(54, 50);
             this.F.TabIndex = 39;
             this.F.Text = "F";
             this.F.UseVisualStyleBackColor = false;
+            this.F.Click += new System.EventHandler(this.F_Click);
             // 
             // G
             // 
             this.G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.G.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.G.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.G.Location = new System.Drawing.Point(517, 444);
+            this.G.Location = new System.Drawing.Point(554, 444);
             this.G.Name = "G";
-            this.G.Size = new System.Drawing.Size(41, 33);
+            this.G.Size = new System.Drawing.Size(56, 50);
             this.G.TabIndex = 38;
             this.G.Text = "G";
             this.G.UseVisualStyleBackColor = false;
+            this.G.Click += new System.EventHandler(this.G_Click);
             // 
             // B
             // 
             this.B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.B.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.B.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.B.Location = new System.Drawing.Point(200, 444);
+            this.B.Location = new System.Drawing.Point(197, 444);
             this.B.Name = "B";
-            this.B.Size = new System.Drawing.Size(41, 33);
+            this.B.Size = new System.Drawing.Size(53, 50);
             this.B.TabIndex = 37;
             this.B.Text = "B";
             this.B.UseVisualStyleBackColor = false;
@@ -429,47 +451,50 @@
             // C
             // 
             this.C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.C.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.C.Location = new System.Drawing.Point(263, 444);
+            this.C.Location = new System.Drawing.Point(266, 444);
             this.C.Name = "C";
-            this.C.Size = new System.Drawing.Size(41, 33);
+            this.C.Size = new System.Drawing.Size(54, 50);
             this.C.TabIndex = 36;
             this.C.Text = "C";
             this.C.UseVisualStyleBackColor = false;
+            this.C.Click += new System.EventHandler(this.C_Click);
             // 
             // D
             // 
             this.D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.D.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.D.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.D.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.D.Location = new System.Drawing.Point(329, 444);
+            this.D.Location = new System.Drawing.Point(337, 444);
             this.D.Name = "D";
-            this.D.Size = new System.Drawing.Size(41, 33);
+            this.D.Size = new System.Drawing.Size(54, 50);
             this.D.TabIndex = 35;
             this.D.Text = "D";
             this.D.UseVisualStyleBackColor = false;
+            this.D.Click += new System.EventHandler(this.D_Click);
             // 
             // E
             // 
             this.E.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.E.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.E.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.E.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.E.Location = new System.Drawing.Point(393, 444);
+            this.E.Location = new System.Drawing.Point(410, 444);
             this.E.Name = "E";
-            this.E.Size = new System.Drawing.Size(41, 33);
+            this.E.Size = new System.Drawing.Size(54, 50);
             this.E.TabIndex = 34;
             this.E.Text = "E";
             this.E.UseVisualStyleBackColor = false;
+            this.E.Click += new System.EventHandler(this.E_Click);
             // 
             // A
             // 
             this.A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
-            this.A.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.A.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.A.Location = new System.Drawing.Point(135, 444);
+            this.A.Location = new System.Drawing.Point(123, 444);
             this.A.Name = "A";
-            this.A.Size = new System.Drawing.Size(41, 33);
+            this.A.Size = new System.Drawing.Size(53, 50);
             this.A.TabIndex = 33;
             this.A.Text = "A";
             this.A.UseVisualStyleBackColor = false;

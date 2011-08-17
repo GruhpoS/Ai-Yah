@@ -138,7 +138,173 @@ namespace HangMan
         private void B_Click(object sender, EventArgs e)
         {
             label5.Text += "B  ";
+            B.Enabled = false;
         }
+
+        private void C_Click(object sender, EventArgs e)
+        {
+            label5.Text += "C  ";
+            C.Enabled = false;
+        }
+
+        private void D_Click(object sender, EventArgs e)
+        {
+            label5.Text += "D  ";
+            D.Enabled = false;
+        }
+
+        private void E_Click(object sender, EventArgs e)
+        {
+            label5.Text += "E  ";
+            E.Enabled = false;
+        }
+
+        private void F_Click(object sender, EventArgs e)
+        {
+            label5.Text += "F  ";
+            F.Enabled = false;
+        }
+
+        private void G_Click(object sender, EventArgs e)
+        {
+            label5.Text += "G  ";
+            G.Enabled = false;
+        }
+
+        private void H_Click(object sender, EventArgs e)
+        {
+            label5.Text += "H  ";
+            H.Enabled = false;
+        }
+
+        private void I_Click(object sender, EventArgs e)
+        {
+            label5.Text += "I  ";
+            I.Enabled = false;
+        }
+
+        private void J_Click(object sender, EventArgs e)
+        {
+            label5.Text += "J  ";
+            J.Enabled = false;
+        }
+
+        private void K_Click(object sender, EventArgs e)
+        {
+            label5.Text += "K  ";
+            K.Enabled = false;
+        }
+
+        private void L_Click(object sender, EventArgs e)
+        {
+            label5.Text += "L  ";
+            L.Enabled = false;
+        }
+
+        private void M_Click(object sender, EventArgs e)
+        {
+            label5.Text += "M  ";
+            M.Enabled = false;
+        }
+
+        private void N_Click(object sender, EventArgs e)
+        {
+            label5.Text += "N  ";
+            N.Enabled = false;
+        }
+
+        private void O_Click(object sender, EventArgs e)
+        {
+            label5.Text += "O  ";
+            O.Enabled = false;
+        }
+
+        private void P_Click(object sender, EventArgs e)
+        {
+            label5.Text += "P  ";
+            P.Enabled = false;
+        }
+
+        private void Q_Click(object sender, EventArgs e)
+        {
+            label5.Text += "Q  ";
+            Q.Enabled = false;
+        }
+
+        private void R_Click(object sender, EventArgs e)
+        {
+            label5.Text += "R  ";
+            R.Enabled = false;
+        }
+
+        private void S_Click(object sender, EventArgs e)
+        {
+            label5.Text += "S  ";
+            S.Enabled = false;
+        }
+
+        private void T_Click(object sender, EventArgs e)
+        {
+            label5.Text += "T  ";
+            T.Enabled = false;
+        }
+
+        private void U_Click(object sender, EventArgs e)
+        {
+            label5.Text += "U  ";
+            U.Enabled = false;
+        }
+
+        private void V_Click(object sender, EventArgs e)
+        {
+            label5.Text += "V  ";
+            V.Enabled = false;
+        }
+
+        private void W_Click(object sender, EventArgs e)
+        {
+            label5.Text += "W  ";
+            W.Enabled = false;
+        }
+
+        private void X_Click(object sender, EventArgs e)
+        {
+            label5.Text += "X  ";
+            X.Enabled = false;
+        }
+
+        private void Y_Click(object sender, EventArgs e)
+        {
+            label5.Text += "Y  ";
+            Y.Enabled = false;
+        }
+
+        private void Z_Click(object sender, EventArgs e)
+        {
+            label5.Text += "Z  ";
+            Z.Enabled = false;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
