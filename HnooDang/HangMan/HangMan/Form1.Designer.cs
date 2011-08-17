@@ -84,7 +84,7 @@
             this.Level.Name = "Level";
             this.Level.Size = new System.Drawing.Size(159, 21);
             this.Level.TabIndex = 7;
-            this.Level.SelectedIndexChanged += new System.EventHandler(this.Level_SelectedIndexChanged);
+            //this.Level.SelectedIndexChanged += new System.EventHandler(this.Level_SelectedIndexChanged);
             // 
             // VocabMode
             // 
