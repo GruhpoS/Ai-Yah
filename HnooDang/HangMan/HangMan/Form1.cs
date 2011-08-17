@@ -166,6 +166,141 @@ namespace HangMan
         {
             string Z = "Z";
         }
+
+        private void A_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void A_Click_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void X_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Y_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Z_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void V_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void T_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void U_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void P_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Q_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void R_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void S_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void O_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void M_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void N_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void I_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void J_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void K_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void L_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void H_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void F_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void G_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void B_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void C_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void D_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void E_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void W_Click_1(object sender, EventArgs e)
+        {
+
+        }
         
        
 

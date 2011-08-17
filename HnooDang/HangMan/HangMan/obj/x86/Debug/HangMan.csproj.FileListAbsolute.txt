@@ -7,3 +7,5 @@ C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Debug\Gen
 C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Debug\GenerateResource.write.1.tlog
 C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Debug\HangMan.exe
 C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Debug\HangMan.pdb
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Debug\HangMan.exe
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Debug\HangMan.pdb
