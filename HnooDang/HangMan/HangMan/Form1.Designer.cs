@@ -64,13 +64,15 @@
             this.D = new System.Windows.Forms.Button();
             this.E = new System.Windows.Forms.Button();
             this.A = new System.Windows.Forms.Button();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // start
             // 
             this.start.Font = new System.Drawing.Font("Freestyle Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start.Location = new System.Drawing.Point(286, 282);
+            this.start.Location = new System.Drawing.Point(290, 282);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(101, 32);
             this.start.TabIndex = 8;
@@ -81,7 +83,7 @@
             // Level
             // 
             this.Level.FormattingEnabled = true;
-            this.Level.Location = new System.Drawing.Point(462, 234);
+            this.Level.Location = new System.Drawing.Point(439, 236);
             this.Level.Name = "Level";
             this.Level.Size = new System.Drawing.Size(159, 21);
             this.Level.TabIndex = 7;
@@ -89,14 +91,14 @@
             // VocabMode
             // 
             this.VocabMode.FormattingEnabled = true;
-            this.VocabMode.Location = new System.Drawing.Point(153, 233);
+            this.VocabMode.Location = new System.Drawing.Point(135, 230);
             this.VocabMode.Name = "VocabMode";
             this.VocabMode.Size = new System.Drawing.Size(161, 21);
             this.VocabMode.TabIndex = 6;
             // 
             // picBox1
             // 
-            this.picBox1.Location = new System.Drawing.Point(263, 43);
+            this.picBox1.Location = new System.Drawing.Point(256, 43);
             this.picBox1.Name = "picBox1";
             this.picBox1.Size = new System.Drawing.Size(135, 141);
             this.picBox1.TabIndex = 5;
@@ -105,10 +107,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Freestyle Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 230);
+            this.label1.Font = new System.Drawing.Font("TH Charmonman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(3, 230);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(135, 28);
+            this.label1.Size = new System.Drawing.Size(126, 27);
             this.label1.TabIndex = 10;
             this.label1.Text = "Vocabulary    Mode";
             // 
@@ -116,7 +118,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Freestyle Script", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(395, 231);
+            this.label2.Location = new System.Drawing.Point(387, 233);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(45, 28);
             this.label2.TabIndex = 11;
@@ -136,7 +138,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label4.Location = new System.Drawing.Point(160, 352);
+            this.label4.Location = new System.Drawing.Point(160, 348);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 24);
             this.label4.TabIndex = 13;
@@ -172,6 +174,7 @@
             this.W.TabIndex = 58;
             this.W.Text = "W";
             this.W.UseVisualStyleBackColor = false;
+            this.W.Click += new System.EventHandler(this.W_Click_1);
             // 
             // X
             // 
@@ -184,6 +187,7 @@
             this.X.TabIndex = 57;
             this.X.Text = "X";
             this.X.UseVisualStyleBackColor = false;
+            this.X.Click += new System.EventHandler(this.X_Click_1);
             // 
             // Y
             // 
@@ -196,6 +200,7 @@
             this.Y.TabIndex = 56;
             this.Y.Text = "Y";
             this.Y.UseVisualStyleBackColor = false;
+            this.Y.Click += new System.EventHandler(this.Y_Click_1);
             // 
             // Z
             // 
@@ -208,6 +213,7 @@
             this.Z.TabIndex = 55;
             this.Z.Text = "Z";
             this.Z.UseVisualStyleBackColor = false;
+            this.Z.Click += new System.EventHandler(this.Z_Click_1);
             // 
             // V
             // 
@@ -220,6 +226,7 @@
             this.V.TabIndex = 54;
             this.V.Text = "V";
             this.V.UseVisualStyleBackColor = false;
+            this.V.Click += new System.EventHandler(this.V_Click_1);
             // 
             // T
             // 
@@ -232,6 +239,7 @@
             this.T.TabIndex = 53;
             this.T.Text = "T";
             this.T.UseVisualStyleBackColor = false;
+            this.T.Click += new System.EventHandler(this.T_Click_1);
             // 
             // U
             // 
@@ -244,6 +252,7 @@
             this.U.TabIndex = 52;
             this.U.Text = "U";
             this.U.UseVisualStyleBackColor = false;
+            this.U.Click += new System.EventHandler(this.U_Click_1);
             // 
             // P
             // 
@@ -256,6 +265,7 @@
             this.P.TabIndex = 51;
             this.P.Text = "P";
             this.P.UseVisualStyleBackColor = false;
+            this.P.Click += new System.EventHandler(this.P_Click_1);
             // 
             // Q
             // 
@@ -268,6 +278,7 @@
             this.Q.TabIndex = 50;
             this.Q.Text = "Q";
             this.Q.UseVisualStyleBackColor = false;
+            this.Q.Click += new System.EventHandler(this.Q_Click_1);
             // 
             // R
             // 
@@ -280,6 +291,7 @@
             this.R.TabIndex = 49;
             this.R.Text = "R";
             this.R.UseVisualStyleBackColor = false;
+            this.R.Click += new System.EventHandler(this.R_Click_1);
             // 
             // S
             // 
@@ -292,6 +304,7 @@
             this.S.TabIndex = 48;
             this.S.Text = "S";
             this.S.UseVisualStyleBackColor = false;
+            this.S.Click += new System.EventHandler(this.S_Click_1);
             // 
             // O
             // 
@@ -304,6 +317,7 @@
             this.O.TabIndex = 47;
             this.O.Text = "O";
             this.O.UseVisualStyleBackColor = false;
+            this.O.Click += new System.EventHandler(this.O_Click_1);
             // 
             // M
             // 
@@ -316,6 +330,7 @@
             this.M.TabIndex = 46;
             this.M.Text = "M";
             this.M.UseVisualStyleBackColor = false;
+            this.M.Click += new System.EventHandler(this.M_Click_1);
             // 
             // N
             // 
@@ -328,6 +343,7 @@
             this.N.TabIndex = 45;
             this.N.Text = "N";
             this.N.UseVisualStyleBackColor = false;
+            this.N.Click += new System.EventHandler(this.N_Click_1);
             // 
             // I
             // 
@@ -340,6 +356,7 @@
             this.I.TabIndex = 44;
             this.I.Text = "I";
             this.I.UseVisualStyleBackColor = false;
+            this.I.Click += new System.EventHandler(this.I_Click_1);
             // 
             // J
             // 
@@ -352,6 +369,7 @@
             this.J.TabIndex = 43;
             this.J.Text = "J";
             this.J.UseVisualStyleBackColor = false;
+            this.J.Click += new System.EventHandler(this.J_Click_1);
             // 
             // K
             // 
@@ -364,6 +382,7 @@
             this.K.TabIndex = 42;
             this.K.Text = "K";
             this.K.UseVisualStyleBackColor = false;
+            this.K.Click += new System.EventHandler(this.K_Click_1);
             // 
             // L
             // 
@@ -376,6 +395,7 @@
             this.L.TabIndex = 41;
             this.L.Text = "L";
             this.L.UseVisualStyleBackColor = false;
+            this.L.Click += new System.EventHandler(this.L_Click_1);
             // 
             // H
             // 
@@ -388,6 +408,7 @@
             this.H.TabIndex = 40;
             this.H.Text = "H";
             this.H.UseVisualStyleBackColor = false;
+            this.H.Click += new System.EventHandler(this.H_Click_1);
             // 
             // F
             // 
@@ -400,6 +421,7 @@
             this.F.TabIndex = 39;
             this.F.Text = "F";
             this.F.UseVisualStyleBackColor = false;
+            this.F.Click += new System.EventHandler(this.F_Click_1);
             // 
             // G
             // 
@@ -412,6 +434,7 @@
             this.G.TabIndex = 38;
             this.G.Text = "G";
             this.G.UseVisualStyleBackColor = false;
+            this.G.Click += new System.EventHandler(this.G_Click_1);
             // 
             // B
             // 
@@ -424,7 +447,7 @@
             this.B.TabIndex = 37;
             this.B.Text = "B";
             this.B.UseVisualStyleBackColor = false;
-            this.B.Click += new System.EventHandler(this.B_Click);
+            this.B.Click += new System.EventHandler(this.B_Click_1);
             // 
             // C
             // 
@@ -437,7 +460,7 @@
             this.C.TabIndex = 36;
             this.C.Text = "C";
             this.C.UseVisualStyleBackColor = false;
-            this.C.Click += new System.EventHandler(this.C_Click);
+            this.C.Click += new System.EventHandler(this.C_Click_1);
             // 
             // D
             // 
@@ -450,7 +473,7 @@
             this.D.TabIndex = 35;
             this.D.Text = "D";
             this.D.UseVisualStyleBackColor = false;
-            this.D.Click += new System.EventHandler(this.D_Click);
+            this.D.Click += new System.EventHandler(this.D_Click_1);
             // 
             // E
             // 
@@ -463,6 +486,7 @@
             this.E.TabIndex = 34;
             this.E.Text = "E";
             this.E.UseVisualStyleBackColor = false;
+            this.E.Click += new System.EventHandler(this.E_Click_1);
             // 
             // A
             // 
@@ -475,13 +499,33 @@
             this.A.TabIndex = 33;
             this.A.Text = "A";
             this.A.UseVisualStyleBackColor = false;
-            this.A.Click += new System.EventHandler(this.A_Click);
+            this.A.Click += new System.EventHandler(this.A_Click_2);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(96, 282);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 13);
+            this.label7.TabIndex = 59;
+            this.label7.Text = "label7";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(99, 308);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(35, 13);
+            this.label8.TabIndex = 60;
+            this.label8.Text = "label8";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(692, 673);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.W);
             this.Controls.Add(this.X);
             this.Controls.Add(this.Y);
@@ -565,6 +609,8 @@
         private System.Windows.Forms.Button D;
         private System.Windows.Forms.Button E;
         private System.Windows.Forms.Button A;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
     }
 }
 
