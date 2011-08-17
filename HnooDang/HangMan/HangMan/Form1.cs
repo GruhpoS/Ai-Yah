@@ -12,6 +12,7 @@ namespace HangMan
 {
     public partial class Form1 : Form
     {
+        private string answer = "";
         public Form1()
         {
             InitializeComponent();
@@ -50,270 +51,8 @@ namespace HangMan
             VocabMode.Items.Add("Animals");
             VocabMode.Items.Add("Sports");
         }
-        private void A_Click(object sender, EventArgs e)
-        {
-            string A = "A";
-        }
-
-        private void B_Click(object sender, EventArgs e)
-        {
-            string B = "B";
-        }
-
-        private void C_Click(object sender, EventArgs e)
-        {
-            string C = "C";
-        }
-
-        private void D_Click(object sender, EventArgs e)
-        {
-            string D = "D";
-        }
-
-        private void E_Click(object sender, EventArgs e)
-        {
-            string E = "E";
-        }
-
-        private void F_Click(object sender, EventArgs e)
-        {
-            string F = "F";
-        }
-
-        private void G_Click(object sender, EventArgs e)
-        {
-            string G = "G";
-        }
-
-        private void H_Click(object sender, EventArgs e)
-        {
-            string H = "H";
-        }
-
-        private void I_Click(object sender, EventArgs e)
-        {
-            string I = "I";
-        }
-
-        private void J_Click(object sender, EventArgs e)
-        {
-            string J = "J";
-        }
-
-        private void K_Click(object sender, EventArgs e)
-        {
-            string K = "K";
-        }
-
-        private void L_Click(object sender, EventArgs e)
-        {
-            string L = "L";
-        }
-
-        private void M_Click(object sender, EventArgs e)
-        {
-            string M = "M";
-        }
-
-        private void N_Click(object sender, EventArgs e)
-        {
-            string N = "N";
-        }
-
-        private void O_Click(object sender, EventArgs e)
-        {
-            string O = "O";
-        }
-
-        private void P_Click(object sender, EventArgs e)
-        {
-            string P = "P";
-        }
-
-        private void Q_Click(object sender, EventArgs e)
-        {
-            string Q = "Q";
-        }
-
-        private void R_Click(object sender, EventArgs e)
-        {
-            string R = "R";
-        }
-
-        private void S_Click(object sender, EventArgs e)
-        {
-            string S = "S";
-        }
-
-        private void T_Click(object sender, EventArgs e)
-        {
-            string T = "T";
-        }
-
-        private void U_Click(object sender, EventArgs e)
-        {
-            string U = "U";
-        }
-
-        private void V_Click(object sender, EventArgs e)
-        {
-            string V = "V";
-        }
-
-        private void W_Click(object sender, EventArgs e)
-        {
-            string W = "W";
-        }
-
-        private void X_Click(object sender, EventArgs e)
-        {
-            string X = "X";
-        }
-
-        private void Y_Click(object sender, EventArgs e)
-        {
-            string Y = "Y";
-        }
-
-        private void Z_Click(object sender, EventArgs e)
-        {
-            string Z = "Z";
-        }
-
-        private void A_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void A_Click_2(object sender, EventArgs e)
-        {
-
-        }
-
-        private void X_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Y_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Z_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void V_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void T_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void U_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void P_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Q_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void R_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void S_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void O_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void M_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void N_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void I_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void J_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void K_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void L_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void H_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void F_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void G_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void B_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void C_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void D_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void E_Click_1(object sender, EventArgs e)
-        {
-
-        }
-
-        private void W_Click_1(object sender, EventArgs e)
-        {
-
-        }
+       
+       
 
         private void start_Click(object sender, EventArgs e)
         {
@@ -362,27 +101,57 @@ namespace HangMan
             return volcab;
 
         }
+        private string BeginWord(string Vword)
+        {
+            //Timing.GetIntegerArrayByRandom(n, 1, 50);
+            string Vocab = "";
+            for (int i = 0; i < Vword.Length;i++ ) {
+                if (Vword[i] != ' ')
+                {
+                    Vocab += "- ";
+                }
+                else {
+                    Vocab += "  ";
+                }
+                
+            }
+            return Vocab;
+
+        }
         
         private string Word (string mode,string lev) {
             //Timing.GetIntegerArrayByRandom(n, 1, 50);
-            string Volcab="";
+            string Vocab="";
             if (lev =="Easy" ||lev =="Normal"||lev=="Hard"){
                 int n = CountData(mode +".txt");
                 int num = RandNumber(0,n-1);
-                Volcab = DataWord(mode + ".txt",num);
+                answer = DataWord(mode + ".txt",num);
+                Vocab = BeginWord(answer);
+                
             }
-            return Volcab;
+            return Vocab;
         
         }
-        
-       
 
-       
+        private void A_Click(object sender, EventArgs e)
+        {
+            label5.Text += "A   ";
+        }
 
-       
+        private void B_Click(object sender, EventArgs e)
+        {
 
-      
-       
+        }
+
+        private void C_Click(object sender, EventArgs e)
+        {
+
+        }
+        private void D_Click(object sender, EventArgs e)
+        {
+
+        }
+            
 
         
     }
