@@ -76,6 +76,7 @@
             this.start.TabIndex = 8;
             this.start.Text = "Start Game";
             this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // Level
             // 
@@ -84,7 +85,6 @@
             this.Level.Name = "Level";
             this.Level.Size = new System.Drawing.Size(159, 21);
             this.Level.TabIndex = 7;
-            //this.Level.SelectedIndexChanged += new System.EventHandler(this.Level_SelectedIndexChanged);
             // 
             // VocabMode
             // 
@@ -135,9 +135,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(160, 349);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
+            this.label4.Location = new System.Drawing.Point(160, 348);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(60, 24);
             this.label4.TabIndex = 13;
             this.label4.Text = "label4";
             // 
