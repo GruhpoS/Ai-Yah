@@ -25,18 +25,28 @@ namespace HangMan
             picBox1.Image = HangMan.Properties.Resources._1;
             VocabMode.Items.Clear();
             
-            VocabMode.Items.Add("Coutries");
-            VocabMode.Items.Add("Animals");
-            VocabMode.Items.Add("Sports");
+            
+            
+            label4.Text = "";
+            label5.Text = "";
+            this.addVocab();
+            this.addLevel();
+        }
+
+        public void addLevel (){
             Level.Items.Clear();
            
             Level.Items.Add("Easy");
             Level.Items.Add("Normal");
             Level.Items.Add("Hard");
-            label4.Text = "";
-            label5.Text = "";
-
         }
+        public void addVocab (){
+            VocabMode.Items.Add("Countries");
+            VocabMode.Items.Add("Animals");
+            VocabMode.Items.Add("Sports");
+        }
+
+        
         private void A_Click(object sender, EventArgs e)
         {
             string A = "A";
@@ -298,6 +308,11 @@ namespace HangMan
         }
 
         private void W_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Level_SelectedIndexChanged(object sender, EventArgs e)
         {
 
         }

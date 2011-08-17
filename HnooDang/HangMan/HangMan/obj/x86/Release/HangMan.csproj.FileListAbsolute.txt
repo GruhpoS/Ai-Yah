@@ -7,3 +7,12 @@ C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Release\G
 C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Release\GenerateResource.write.1.tlog
 C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Release\HangMan.exe
 C:\Documents and Settings\admin\Desktop\Ai-Yah\HangMan\HangMan\obj\x86\Release\HangMan.pdb
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\HangMan.Form1.resources
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\HangMan.Properties.Resources.resources
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\HangMan.exe
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\obj\x86\Release\HangMan.pdb
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\bin\Release\HangMan.exe
+C:\Documents and Settings\admin\Ai-Yah\HnooDang\HangMan\HangMan\bin\Release\HangMan.pdb
