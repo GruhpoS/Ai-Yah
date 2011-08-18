@@ -33,6 +33,8 @@ namespace HangMan
             label4.Text = "";
             label5.Text = "";
             label8.Text = "";
+            label9.Text = "";
+
             Hint.Enabled = false;
             this.addVocab();
             this.addLevel();
@@ -61,7 +63,9 @@ namespace HangMan
             label8.Text = "";
             label4.Text = Word(VocabMode.Text,Level.Text);
             label5.Text = "";
+            label9.Text = "";
             Hint.Enabled = true;
+            Hint.BackColor = System.Drawing.Color.Khaki;
             ////////////
             on();
             ClSum = 0;
@@ -357,6 +361,10 @@ namespace HangMan
             {
                 if (ch == getAnswer()[i] || ((ch+32) == getAnswer()[i]))
                 {
+                    if (ch >= 97) {
+                        int a = ch-32;
+                        ch = Convert.ToChar (a);
+                    }
                     selCh[i] = ch;
                     k++;
                 }
@@ -370,6 +378,7 @@ namespace HangMan
             }
             if (check()){
                 label8.Text = ".......You Win....";
+                label9.Text = " Answer --- > " + getAnswer();
                 off();
             }
             
@@ -385,16 +394,19 @@ namespace HangMan
             label7.Text = getMode()+"   " + getClSum();
             if (getClSum()==10&&(getMode()=="Easy")){
                 label8.Text = ".......You Lose....";
+                label9.Text = " Answer --- > "+getAnswer();
                 off();          
             }
             else if (getClSum() == 7 && (getMode() == "Normal"))
             {
                 label8.Text = ".......You Lose....";
+                label9.Text = " Answer --- > " + getAnswer();
                 off(); 
             }
             else if (getClSum() == 5 && (getMode() == "Hard"))
             {
                 label8.Text = ".......You Lose....";
+                label9.Text = " Answer --- > " + getAnswer();
                 off();
             }
 
@@ -637,11 +649,12 @@ namespace HangMan
        
         private void Hint_Click(object sender, EventArgs e)
         {
-            int k= RandNumber(0, getAnswer().Length-1);
-            while (getSelCh()[k]!='_'){
-                k = RandNumber(0, getAnswer().Length - 1);
+            int k= RandNumber(0, getAnswer().Length);
+            while (getSelCh()[k]!='_' && k!=getAnswer().Length){
+                k = RandNumber(0, getAnswer().Length);
             }
             Click(getAnswer()[k]);
+            Hint.BackColor = System.Drawing.Color.DarkKhaki;
             Hint.Enabled = false;
         }
 
