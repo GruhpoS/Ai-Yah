@@ -64,7 +64,6 @@
             this.D = new System.Windows.Forms.Button();
             this.E = new System.Windows.Forms.Button();
             this.A = new System.Windows.Forms.Button();
-            this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.Hint = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
@@ -504,15 +503,6 @@
             this.A.UseVisualStyleBackColor = false;
             this.A.Click += new System.EventHandler(this.A_Click);
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(118, 282);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 13);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "label7";
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -556,7 +546,6 @@
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Hint);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
             this.Controls.Add(this.W);
             this.Controls.Add(this.X);
             this.Controls.Add(this.Y);
@@ -640,7 +629,6 @@
         private System.Windows.Forms.Button D;
         private System.Windows.Forms.Button E;
         private System.Windows.Forms.Button A;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Hint;
         private System.Windows.Forms.Label label9;

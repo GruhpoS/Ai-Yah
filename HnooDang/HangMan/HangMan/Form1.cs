@@ -333,7 +333,7 @@ namespace HangMan
                 }
                
                 Vocab = VocabWord(answer);
-                label7.Text = getAnswer();
+               
                 
             }
             return Vocab;
@@ -379,6 +379,8 @@ namespace HangMan
             if (check()){
                 label8.Text = ".......You Win....";
                 label9.Text = " Answer --- > " + getAnswer();
+                Hint.BackColor = System.Drawing.Color.DarkKhaki;
+                Hint.Enabled = false;
                 off();
             }
             
@@ -391,22 +393,28 @@ namespace HangMan
         }
         private void Pic() {
 
-            label7.Text = getMode()+"   " + getClSum();
+            
             if (getClSum()==10&&(getMode()=="Easy")){
                 label8.Text = ".......You Lose....";
                 label9.Text = " Answer --- > "+getAnswer();
+                Hint.BackColor = System.Drawing.Color.DarkKhaki;
+                Hint.Enabled = false;
                 off();          
             }
             else if (getClSum() == 7 && (getMode() == "Normal"))
             {
                 label8.Text = ".......You Lose....";
                 label9.Text = " Answer --- > " + getAnswer();
+                Hint.BackColor = System.Drawing.Color.DarkKhaki;
+                Hint.Enabled = false;
                 off(); 
             }
             else if (getClSum() == 5 && (getMode() == "Hard"))
             {
                 label8.Text = ".......You Lose....";
                 label9.Text = " Answer --- > " + getAnswer();
+                Hint.BackColor = System.Drawing.Color.DarkKhaki;
+                Hint.Enabled = false;
                 off();
             }
 
