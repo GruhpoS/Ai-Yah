@@ -24,7 +24,7 @@ namespace HangMan
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            off();
             picBox1.Image = HangMan.Properties.Resources._1;
             VocabMode.Items.Clear();
             label4.Text = "";
@@ -56,6 +56,7 @@ namespace HangMan
 
             label4.Text = Word(VocabMode.Text,Level.Text);
             ////////////
+            on();
             
 
             
@@ -64,11 +65,169 @@ namespace HangMan
         private void on() {
             A.BackColor = System.Drawing.Color.LightPink;
             A.Enabled = true;
+            
+            B.BackColor = System.Drawing.Color.LightPink;
+            B.Enabled = true;
+
+            C.BackColor = System.Drawing.Color.LightPink;
+            C.Enabled = true;
+
+            D.BackColor = System.Drawing.Color.LightPink;
+            D.Enabled = true;
+
+            E.BackColor = System.Drawing.Color.LightPink;
+            E.Enabled = true;
+
+            F.BackColor = System.Drawing.Color.LightPink;
+            F.Enabled = true;
+
+            G.BackColor = System.Drawing.Color.LightPink;
+            G.Enabled = true;
+            
+            H.BackColor = System.Drawing.Color.LightPink;
+            H.Enabled = true;
+
+            I.BackColor = System.Drawing.Color.LightPink;
+            I.Enabled = true;
+            
+            J.BackColor = System.Drawing.Color.LightPink;
+            J.Enabled = true;
+
+            K.BackColor = System.Drawing.Color.LightPink;
+            K.Enabled = true;
+
+            L.BackColor = System.Drawing.Color.LightPink;
+            L.Enabled = true;
+
+            M.BackColor = System.Drawing.Color.LightPink;
+            M.Enabled = true;
+
+            N.BackColor = System.Drawing.Color.LightPink;
+            N.Enabled = true;
+
+            O.BackColor = System.Drawing.Color.LightPink;
+            O.Enabled = true;
+
+            P.BackColor = System.Drawing.Color.LightPink;
+            P.Enabled = true;
+
+            Q.BackColor = System.Drawing.Color.LightPink;
+            Q.Enabled = true;
+
+            R.BackColor = System.Drawing.Color.LightPink;
+            R.Enabled = true;
+
+            S.BackColor = System.Drawing.Color.LightPink;
+            S.Enabled = true;
+
+            T.BackColor = System.Drawing.Color.LightPink;
+            T.Enabled = true;
+
+            U.BackColor = System.Drawing.Color.LightPink;
+            U.Enabled = true;
+
+            V.BackColor = System.Drawing.Color.LightPink;
+            V.Enabled = true;
+
+            W.BackColor = System.Drawing.Color.LightPink;
+            W.Enabled = true;
+
+            X.BackColor = System.Drawing.Color.LightPink;
+            X.Enabled = true;
+
+            Y.BackColor = System.Drawing.Color.LightPink;
+            Y.Enabled = true;
+
+            Z.BackColor = System.Drawing.Color.LightPink;
+            Z.Enabled = true;
+            
+            
+        
+        
         
         }
         private void off() {
             A.BackColor = System.Drawing.Color.Gray;
             A.Enabled = false;
+
+            B.BackColor = System.Drawing.Color.Gray;
+            B.Enabled = false;
+            
+            C.BackColor = System.Drawing.Color.Gray;
+            C.Enabled = false;
+
+            D.BackColor = System.Drawing.Color.Gray;
+            D.Enabled = false;
+
+            E.BackColor = System.Drawing.Color.Gray;
+            E.Enabled = false;
+
+            F.BackColor = System.Drawing.Color.Gray;
+            F.Enabled = false;
+
+            G.BackColor = System.Drawing.Color.Gray;
+            G.Enabled = false;
+
+            H.BackColor = System.Drawing.Color.Gray;
+            H.Enabled = false;
+
+            I.BackColor = System.Drawing.Color.Gray;
+            I.Enabled = false;
+
+            J.BackColor = System.Drawing.Color.Gray;
+            J.Enabled = false;
+
+            K.BackColor = System.Drawing.Color.Gray;
+            K.Enabled = false;
+
+            L.BackColor = System.Drawing.Color.Gray;
+            L.Enabled = false;
+
+            M.BackColor = System.Drawing.Color.Gray;
+            M.Enabled = false;
+
+            N.BackColor = System.Drawing.Color.Gray;
+            N.Enabled = false;
+
+            O.BackColor = System.Drawing.Color.Gray;
+            O.Enabled = false;
+
+            P.BackColor = System.Drawing.Color.Gray;
+            P.Enabled = false;
+
+            Q.BackColor = System.Drawing.Color.Gray;
+            Q.Enabled = false;
+
+            R.BackColor = System.Drawing.Color.Gray;
+            R.Enabled = false;
+
+            S.BackColor = System.Drawing.Color.Gray;
+            S.Enabled = false;
+
+            T.BackColor = System.Drawing.Color.Gray;
+            T.Enabled = false;
+
+            U.BackColor = System.Drawing.Color.Gray;
+            U.Enabled = false;
+
+            V.BackColor = System.Drawing.Color.Gray;
+            V.Enabled = false;
+
+            W.BackColor = System.Drawing.Color.Gray;
+            W.Enabled = false;
+
+            X.BackColor = System.Drawing.Color.Gray;
+            X.Enabled = false;
+
+            Y.BackColor = System.Drawing.Color.Gray;
+            Y.Enabled = false;
+
+            Z.BackColor = System.Drawing.Color.Gray;
+            Z.Enabled = false;
+            
+            
+
+            
         
         }
         private int RandNumber(int minValue,int maxValue) {
