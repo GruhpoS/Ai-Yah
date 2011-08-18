@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.start = new System.Windows.Forms.Button();
             this.Level = new System.Windows.Forms.ComboBox();
             this.VocabMode = new System.Windows.Forms.ComboBox();
@@ -67,15 +68,19 @@
             this.label8 = new System.Windows.Forms.Label();
             this.Hint = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
+            this.picture = new System.Windows.Forms.PictureBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).BeginInit();
             this.SuspendLayout();
             // 
             // start
             // 
             this.start.Font = new System.Drawing.Font("Freestyle Script", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.start.Location = new System.Drawing.Point(290, 282);
+            this.start.Location = new System.Drawing.Point(310, 429);
             this.start.Name = "start";
-            this.start.Size = new System.Drawing.Size(101, 32);
+            this.start.Size = new System.Drawing.Size(101, 45);
             this.start.TabIndex = 8;
             this.start.Text = "Start Game";
             this.start.UseVisualStyleBackColor = true;
@@ -84,7 +89,7 @@
             // Level
             // 
             this.Level.FormattingEnabled = true;
-            this.Level.Location = new System.Drawing.Point(535, 234);
+            this.Level.Location = new System.Drawing.Point(555, 381);
             this.Level.Name = "Level";
             this.Level.Size = new System.Drawing.Size(109, 21);
             this.Level.TabIndex = 7;
@@ -92,16 +97,20 @@
             // VocabMode
             // 
             this.VocabMode.FormattingEnabled = true;
-            this.VocabMode.Location = new System.Drawing.Point(230, 235);
+            this.VocabMode.Location = new System.Drawing.Point(250, 382);
             this.VocabMode.Name = "VocabMode";
             this.VocabMode.Size = new System.Drawing.Size(161, 21);
             this.VocabMode.TabIndex = 6;
             // 
             // picBox1
             // 
-            this.picBox1.Location = new System.Drawing.Point(256, 43);
+            this.picBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("picBox1.ErrorImage")));
+            this.picBox1.Image = global::HangMan.Properties.Resources.LogoHangMan;
+            this.picBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("picBox1.InitialImage")));
+            this.picBox1.Location = new System.Drawing.Point(5, 3);
             this.picBox1.Name = "picBox1";
-            this.picBox1.Size = new System.Drawing.Size(135, 141);
+            this.picBox1.Size = new System.Drawing.Size(792, 151);
+            this.picBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picBox1.TabIndex = 5;
             this.picBox1.TabStop = false;
             // 
@@ -109,7 +118,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 230);
+            this.label1.Location = new System.Drawing.Point(23, 377);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(220, 25);
             this.label1.TabIndex = 10;
@@ -119,7 +128,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(446, 231);
+            this.label2.Location = new System.Drawing.Point(466, 378);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 25);
             this.label2.TabIndex = 11;
@@ -129,7 +138,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Snap ITC", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(58, 340);
+            this.label3.Location = new System.Drawing.Point(78, 487);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(96, 35);
             this.label3.TabIndex = 12;
@@ -139,7 +148,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Snap ITC", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(169, 346);
+            this.label4.Location = new System.Drawing.Point(189, 493);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 31);
             this.label4.TabIndex = 13;
@@ -149,7 +158,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(222)));
-            this.label5.Location = new System.Drawing.Point(312, 403);
+            this.label5.Location = new System.Drawing.Point(332, 550);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(41, 13);
             this.label5.TabIndex = 14;
@@ -159,7 +168,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(64, 395);
+            this.label6.Location = new System.Drawing.Point(84, 542);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(242, 25);
             this.label6.TabIndex = 15;
@@ -170,7 +179,7 @@
             this.W.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.W.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.W.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.W.Location = new System.Drawing.Point(266, 608);
+            this.W.Location = new System.Drawing.Point(246, 752);
             this.W.Name = "W";
             this.W.Size = new System.Drawing.Size(54, 53);
             this.W.TabIndex = 58;
@@ -183,7 +192,7 @@
             this.X.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.X.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.X.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.X.Location = new System.Drawing.Point(336, 608);
+            this.X.Location = new System.Drawing.Point(316, 752);
             this.X.Name = "X";
             this.X.Size = new System.Drawing.Size(54, 53);
             this.X.TabIndex = 57;
@@ -196,7 +205,7 @@
             this.Y.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Y.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Y.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Y.Location = new System.Drawing.Point(411, 608);
+            this.Y.Location = new System.Drawing.Point(391, 752);
             this.Y.Name = "Y";
             this.Y.Size = new System.Drawing.Size(54, 53);
             this.Y.TabIndex = 56;
@@ -209,7 +218,7 @@
             this.Z.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Z.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Z.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Z.Location = new System.Drawing.Point(483, 608);
+            this.Z.Location = new System.Drawing.Point(463, 752);
             this.Z.Name = "Z";
             this.Z.Size = new System.Drawing.Size(54, 53);
             this.Z.TabIndex = 55;
@@ -222,7 +231,7 @@
             this.V.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.V.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.V.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.V.Location = new System.Drawing.Point(197, 608);
+            this.V.Location = new System.Drawing.Point(177, 752);
             this.V.Name = "V";
             this.V.Size = new System.Drawing.Size(53, 53);
             this.V.TabIndex = 54;
@@ -235,7 +244,7 @@
             this.T.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.T.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.T.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.T.Location = new System.Drawing.Point(483, 553);
+            this.T.Location = new System.Drawing.Point(463, 697);
             this.T.Name = "T";
             this.T.Size = new System.Drawing.Size(54, 49);
             this.T.TabIndex = 53;
@@ -248,7 +257,7 @@
             this.U.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.U.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.U.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.U.Location = new System.Drawing.Point(554, 553);
+            this.U.Location = new System.Drawing.Point(534, 697);
             this.U.Name = "U";
             this.U.Size = new System.Drawing.Size(56, 49);
             this.U.TabIndex = 52;
@@ -261,7 +270,7 @@
             this.P.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.P.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.P.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.P.Location = new System.Drawing.Point(197, 553);
+            this.P.Location = new System.Drawing.Point(177, 697);
             this.P.Name = "P";
             this.P.Size = new System.Drawing.Size(53, 49);
             this.P.TabIndex = 51;
@@ -274,7 +283,7 @@
             this.Q.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.Q.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Q.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.Q.Location = new System.Drawing.Point(266, 553);
+            this.Q.Location = new System.Drawing.Point(246, 697);
             this.Q.Name = "Q";
             this.Q.Size = new System.Drawing.Size(54, 49);
             this.Q.TabIndex = 50;
@@ -287,7 +296,7 @@
             this.R.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.R.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.R.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.R.Location = new System.Drawing.Point(337, 553);
+            this.R.Location = new System.Drawing.Point(317, 697);
             this.R.Name = "R";
             this.R.Size = new System.Drawing.Size(54, 49);
             this.R.TabIndex = 49;
@@ -300,7 +309,7 @@
             this.S.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.S.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.S.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.S.Location = new System.Drawing.Point(410, 553);
+            this.S.Location = new System.Drawing.Point(390, 697);
             this.S.Name = "S";
             this.S.Size = new System.Drawing.Size(54, 49);
             this.S.TabIndex = 48;
@@ -313,7 +322,7 @@
             this.O.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.O.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.O.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.O.Location = new System.Drawing.Point(123, 553);
+            this.O.Location = new System.Drawing.Point(103, 697);
             this.O.Name = "O";
             this.O.Size = new System.Drawing.Size(53, 49);
             this.O.TabIndex = 47;
@@ -326,7 +335,7 @@
             this.M.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.M.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.M.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.M.Location = new System.Drawing.Point(483, 500);
+            this.M.Location = new System.Drawing.Point(463, 644);
             this.M.Name = "M";
             this.M.Size = new System.Drawing.Size(54, 47);
             this.M.TabIndex = 46;
@@ -339,7 +348,7 @@
             this.N.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.N.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.N.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.N.Location = new System.Drawing.Point(554, 500);
+            this.N.Location = new System.Drawing.Point(534, 644);
             this.N.Name = "N";
             this.N.Size = new System.Drawing.Size(56, 47);
             this.N.TabIndex = 45;
@@ -352,7 +361,7 @@
             this.I.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.I.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.I.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.I.Location = new System.Drawing.Point(197, 500);
+            this.I.Location = new System.Drawing.Point(177, 644);
             this.I.Name = "I";
             this.I.Size = new System.Drawing.Size(53, 47);
             this.I.TabIndex = 44;
@@ -365,7 +374,7 @@
             this.J.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.J.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.J.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.J.Location = new System.Drawing.Point(266, 500);
+            this.J.Location = new System.Drawing.Point(246, 644);
             this.J.Name = "J";
             this.J.Size = new System.Drawing.Size(54, 47);
             this.J.TabIndex = 43;
@@ -378,7 +387,7 @@
             this.K.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.K.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.K.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.K.Location = new System.Drawing.Point(337, 500);
+            this.K.Location = new System.Drawing.Point(317, 644);
             this.K.Name = "K";
             this.K.Size = new System.Drawing.Size(54, 47);
             this.K.TabIndex = 42;
@@ -391,7 +400,7 @@
             this.L.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.L.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.L.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.L.Location = new System.Drawing.Point(410, 500);
+            this.L.Location = new System.Drawing.Point(390, 644);
             this.L.Name = "L";
             this.L.Size = new System.Drawing.Size(54, 47);
             this.L.TabIndex = 41;
@@ -404,7 +413,7 @@
             this.H.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.H.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.H.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.H.Location = new System.Drawing.Point(123, 500);
+            this.H.Location = new System.Drawing.Point(103, 644);
             this.H.Name = "H";
             this.H.Size = new System.Drawing.Size(53, 47);
             this.H.TabIndex = 40;
@@ -417,7 +426,7 @@
             this.F.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.F.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.F.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.F.Location = new System.Drawing.Point(483, 444);
+            this.F.Location = new System.Drawing.Point(463, 588);
             this.F.Name = "F";
             this.F.Size = new System.Drawing.Size(54, 50);
             this.F.TabIndex = 39;
@@ -430,7 +439,7 @@
             this.G.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.G.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.G.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.G.Location = new System.Drawing.Point(554, 444);
+            this.G.Location = new System.Drawing.Point(534, 588);
             this.G.Name = "G";
             this.G.Size = new System.Drawing.Size(56, 50);
             this.G.TabIndex = 38;
@@ -443,7 +452,7 @@
             this.B.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.B.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.B.Location = new System.Drawing.Point(197, 444);
+            this.B.Location = new System.Drawing.Point(177, 588);
             this.B.Name = "B";
             this.B.Size = new System.Drawing.Size(53, 50);
             this.B.TabIndex = 37;
@@ -456,7 +465,7 @@
             this.C.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.C.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.C.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.C.Location = new System.Drawing.Point(266, 444);
+            this.C.Location = new System.Drawing.Point(246, 588);
             this.C.Name = "C";
             this.C.Size = new System.Drawing.Size(54, 50);
             this.C.TabIndex = 36;
@@ -469,7 +478,7 @@
             this.D.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.D.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.D.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.D.Location = new System.Drawing.Point(337, 444);
+            this.D.Location = new System.Drawing.Point(317, 588);
             this.D.Name = "D";
             this.D.Size = new System.Drawing.Size(54, 50);
             this.D.TabIndex = 35;
@@ -482,7 +491,7 @@
             this.E.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.E.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.E.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.E.Location = new System.Drawing.Point(410, 444);
+            this.E.Location = new System.Drawing.Point(390, 588);
             this.E.Name = "E";
             this.E.Size = new System.Drawing.Size(54, 50);
             this.E.TabIndex = 34;
@@ -495,7 +504,7 @@
             this.A.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(192)))));
             this.A.Font = new System.Drawing.Font("Snap ITC", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.A.Location = new System.Drawing.Point(123, 444);
+            this.A.Location = new System.Drawing.Point(103, 588);
             this.A.Name = "A";
             this.A.Size = new System.Drawing.Size(53, 50);
             this.A.TabIndex = 33;
@@ -507,8 +516,8 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Snap ITC", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.DarkRed;
-            this.label8.Location = new System.Drawing.Point(249, 475);
+            this.label8.ForeColor = System.Drawing.Color.Magenta;
+            this.label8.Location = new System.Drawing.Point(236, 596);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 37);
             this.label8.TabIndex = 60;
@@ -519,7 +528,7 @@
             this.Hint.BackColor = System.Drawing.Color.Khaki;
             this.Hint.Font = new System.Drawing.Font("Snap ITC", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hint.ForeColor = System.Drawing.Color.OrangeRed;
-            this.Hint.Location = new System.Drawing.Point(665, 444);
+            this.Hint.Location = new System.Drawing.Point(645, 588);
             this.Hint.Name = "Hint";
             this.Hint.Size = new System.Drawing.Size(75, 50);
             this.Hint.TabIndex = 61;
@@ -532,17 +541,49 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Snap ITC", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Magenta;
-            this.label9.Location = new System.Drawing.Point(260, 550);
+            this.label9.Location = new System.Drawing.Point(236, 659);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(108, 35);
             this.label9.TabIndex = 62;
             this.label9.Text = "label9";
             // 
+            // picture
+            // 
+            this.picture.Location = new System.Drawing.Point(286, 160);
+            this.picture.Name = "picture";
+            this.picture.Size = new System.Drawing.Size(173, 208);
+            this.picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picture.TabIndex = 63;
+            this.picture.TabStop = false;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(100, 274);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.TabIndex = 64;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Snap ITC", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.OrangeRed;
+            this.label10.Location = new System.Drawing.Point(456, 250);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(131, 37);
+            this.label10.TabIndex = 66;
+            this.label10.Text = "label10";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 673);
+            this.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ClientSize = new System.Drawing.Size(792, 824);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.picture);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.Hint);
             this.Controls.Add(this.label8);
@@ -586,6 +627,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -632,6 +674,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button Hint;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.PictureBox picture;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label10;
     }
 }
 

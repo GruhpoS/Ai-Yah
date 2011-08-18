@@ -66,5 +66,12 @@ namespace HangMan.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        internal static System.Drawing.Bitmap LogoHangMan {
+            get {
+                object obj = ResourceManager.GetObject("LogoHangMan", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
     }
 }

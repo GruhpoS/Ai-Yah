@@ -17,6 +17,8 @@ namespace HangMan
         private int ClSum = 0;
         private int Clsumed = 0;
         private string ChMode = "";
+        private int PicMode = 0;
+        private string PinName = "";
         public Form1()
         {
             InitializeComponent();
@@ -28,18 +30,20 @@ namespace HangMan
         private void Form1_Load(object sender, EventArgs e)
         {
             off();
-            picBox1.Image = HangMan.Properties.Resources._1;
+            
             VocabMode.Items.Clear();
             label4.Text = "";
             label5.Text = "";
             label8.Text = "";
             label9.Text = "";
-
+            label10.Text = "";
             Hint.Enabled = false;
             this.addVocab();
             this.addLevel();
+
         }
 
+        
         public void addLevel()
         {
             Level.Items.Clear();
@@ -60,6 +64,7 @@ namespace HangMan
 
         private void start_Click(object sender, EventArgs e)
         {
+            label10.Text = "";
             label8.Text = "";
             label4.Text = Word(VocabMode.Text,Level.Text);
             label5.Text = "";
@@ -69,10 +74,22 @@ namespace HangMan
             ////////////
             on();
             ClSum = 0;
+            start.Text = "New  game";
+            PicMode = RandNumber(1,3);
+          
+            string name = "C:/Documents and Settings/admin/Ai-Yah/HnooDang/picture/" + FilePic(getPicMode()) + "/1.png";         
+            picture.Image = Image.FromFile(@name);
+            picture.SizeMode = PictureBoxSizeMode.StretchImage;
+            if (Level.Text=="Hard"){
+                Hint.BackColor = System.Drawing.Color.DarkKhaki;
+                Hint.Enabled = false;
+            }
             
-
             
-            
+        }
+        public int getPicMode()
+        {
+            return PicMode;
         }
         private void on() {
             A.BackColor = System.Drawing.Color.LightPink;
@@ -373,15 +390,19 @@ namespace HangMan
            
             if (k == 0)
             {
+
                 ClSum++;
                 Pic();
             }
             if (check()){
                 label8.Text = ".......You Win....";
+                label10.Text = ".....You got it.... ";
+               
                 label9.Text = " Answer --- > " + getAnswer();
                 Hint.BackColor = System.Drawing.Color.DarkKhaki;
                 Hint.Enabled = false;
                 off();
+
             }
             
            label4.Text=ShowAnswer();
@@ -395,6 +416,8 @@ namespace HangMan
 
             
             if (getClSum()==10&&(getMode()=="Easy")){
+                label10.Text = ".....You got it.... ";
+              
                 label8.Text = ".......You Lose....";
                 label9.Text = " Answer --- > "+getAnswer();
                 Hint.BackColor = System.Drawing.Color.DarkKhaki;
@@ -403,6 +426,8 @@ namespace HangMan
             }
             else if (getClSum() == 7 && (getMode() == "Normal"))
             {
+                label10.Text = ".....You got it.... ";
+               
                 label8.Text = ".......You Lose....";
                 label9.Text = " Answer --- > " + getAnswer();
                 Hint.BackColor = System.Drawing.Color.DarkKhaki;
@@ -411,12 +436,61 @@ namespace HangMan
             }
             else if (getClSum() == 5 && (getMode() == "Hard"))
             {
+                label10.Text = ".....You got it.... ";
+              
                 label8.Text = ".......You Lose....";
                 label9.Text = " Answer --- > " + getAnswer();
                 Hint.BackColor = System.Drawing.Color.DarkKhaki;
                 Hint.Enabled = false;
                 off();
             }
+
+            if (getMode() == "Easy")
+            {
+                PicEasy(getClSum());
+            }
+            if (getMode() == "Normal")
+            {
+                int p=getClSum();
+                if (p < 4)
+                {
+                    PicEasy(getClSum());
+                }
+                else
+                {
+                    PicEasy(getClSum()+3);
+                }
+            
+            }
+            else if (getMode() == "Hard") {
+                PicHard(getClSum());
+            }
+
+        }
+        public string FilePic(int n) {
+            if (n == 1)
+            {
+                return "teddybear";
+            }
+            else {
+                
+                return "kitakita";
+            }
+        }
+        private void PicEasy(int n) {
+
+           
+                string name = "C:/Documents and Settings/admin/Ai-Yah/HnooDang/picture/" + FilePic(getPicMode()) + "/" + (n + 1) + ".png";
+                picture.Image = new Bitmap(@name);
+            
+        
+        }
+        private void PicHard(int n)
+        {
+
+            string name = "C:/Documents and Settings/admin/Ai-Yah/HnooDang/picture/" + FilePic(getPicMode()) + "/" + ((n * 2)+1) + ".png";
+            picture.Image = new Bitmap(@name);
+
 
         }
         private bool check() {
@@ -661,13 +735,149 @@ namespace HangMan
             while (getSelCh()[k]!='_' && k!=getAnswer().Length){
                 k = RandNumber(0, getAnswer().Length);
             }
+            ClickHint(getAnswer()[k]);
             Click(getAnswer()[k]);
+            
             Hint.BackColor = System.Drawing.Color.DarkKhaki;
             Hint.Enabled = false;
         }
 
+        private void ClickHint(char ch) {
+          
+            if (ch == 'A' || ch == 'a')
+            {
+                A.BackColor = System.Drawing.Color.Gray;
+                A.Enabled = false;
+            }
 
+            else if (ch == 'B' || ch == 'b')
+            {
+                B.BackColor = System.Drawing.Color.Gray;
+                B.Enabled = false;
+            }
+            else if (ch == 'C' || ch == 'c')
+            {
+                C.BackColor = System.Drawing.Color.Gray;
+                C.Enabled = false;
+            }
+            else if (ch == 'D' || ch == 'd')
+            {
+                D.BackColor = System.Drawing.Color.Gray;
+                D.Enabled = false;
+            }
+            else if (ch == 'E' || ch == 'e')
+            {
+                E.BackColor = System.Drawing.Color.Gray;
+                E.Enabled = false;
+            }
+            else if (ch == 'F' || ch == 'f')
+            {
+                F.BackColor = System.Drawing.Color.Gray;
+                F.Enabled = false;
+            }
+            else if (ch == 'G' || ch == 'g')
+            {
+                G.BackColor = System.Drawing.Color.Gray;
+                G.Enabled = false;
+            }
+            else if (ch == 'H' || ch == 'h')
+            {
+                H.BackColor = System.Drawing.Color.Gray;
+                H.Enabled = false;
+            }
+            else if (ch == 'I' || ch == 'i')
+            {
+                I.BackColor = System.Drawing.Color.Gray;
+                I.Enabled = false;
+            }
+            else if (ch == 'J' || ch == 'j')
+            {
+                J.BackColor = System.Drawing.Color.Gray;
+                J.Enabled = false;
+            }
+            else if (ch == 'K' || ch == 'k')
+            {
+                K.BackColor = System.Drawing.Color.Gray;
+                K.Enabled = false;
+            }
+            else if (ch == 'L' || ch == 'l')
+            {
+                L.BackColor = System.Drawing.Color.Gray;
+                L.Enabled = false;
+            }
+            else if (ch == 'M' || ch == 'm')
+            {
+                M.BackColor = System.Drawing.Color.Gray;
+                M.Enabled = false;
+            }
+            else if (ch == 'N' || ch == 'n')
+            {
+                N.BackColor = System.Drawing.Color.Gray;
+                N.Enabled = false;
+            }
+            else if (ch == 'O' || ch == 'o')
+            {
+                O.BackColor = System.Drawing.Color.Gray;
+                O.Enabled = false;
+            }
+            else if (ch == 'P' || ch == 'p')
+            {
+                P.BackColor = System.Drawing.Color.Gray;
+                P.Enabled = false;
+            }
+            else if (ch == 'Q' || ch == 'q')
+            {
+                Q.BackColor = System.Drawing.Color.Gray;
+                Q.Enabled = false;
+            }
+            else if (ch == 'R' || ch == 'r')
+            {
+                R.BackColor = System.Drawing.Color.Gray;
+                R.Enabled = false;
+            }
+            else if (ch == 'S' || ch == 's')
+            {
+                S.BackColor = System.Drawing.Color.Gray;
+                S.Enabled = false;
+            }
+            else if (ch == 'T' || ch == 't')
+            {
+                T.BackColor = System.Drawing.Color.Gray;
+                T.Enabled = false;
+            }
+            else if (ch == 'U' || ch == 'u')
+            {
+                U.BackColor = System.Drawing.Color.Gray;
+                U.Enabled = false;
+            }
+            else if (ch == 'V' || ch == 'v')
+            {
+                V.BackColor = System.Drawing.Color.Gray;
+                V.Enabled = false;
+            }
+            else if (ch == 'W' || ch == 'w')
+            {
+                W.BackColor = System.Drawing.Color.Gray;
+                W.Enabled = false;
+            }
+            else if (ch == 'X' || ch == 'x')
+            {
+                X.BackColor = System.Drawing.Color.Gray;
+                X.Enabled = false;
+            }
+            else if (ch == 'Y' || ch == 'y')
+            {
+                Y.BackColor = System.Drawing.Color.Gray;
+                Y.Enabled = false;
+            }
+            else if (ch == 'Z' || ch == 'z')
+            {
+                Z.BackColor = System.Drawing.Color.Gray;
+                Z.Enabled = false;
+            }
+        }
 
+        
 
         
     }
