@@ -87,6 +87,7 @@ namespace HangMan
             
             
         }
+        // test แล้ว //
         public int getPicMode()
         {
             return PicMode;
@@ -259,7 +260,9 @@ namespace HangMan
             
         
         }
-        private int RandNumber(int minValue,int maxValue) {
+
+        // test แล้ว //
+        public int RandNumber(int minValue,int maxValue) {
             Random rand = new Random();
             int number =0 ;
             number = rand.Next(minValue, maxValue);
@@ -272,8 +275,9 @@ namespace HangMan
             return answer;
         }
 
-        private int CountData(string mode) {
-            
+        // test แล้ว //
+        public int CountData(string mode) {
+            //**//
             StreamReader read = new StreamReader(@"C:\Documents and Settings\admin\Ai-Yah\"+mode);
             string data;
             int count = 0;
@@ -284,9 +288,10 @@ namespace HangMan
         
         }
 
-        private string DataWord(string mode,int count)
+        // test แล้ว //
+        public string DataWord(string mode,int count)
         {
-            
+
             StreamReader read = new StreamReader(@"C:\Documents and Settings\admin\Ai-Yah\" + mode);
             string data;
             string volcab="";
@@ -302,7 +307,8 @@ namespace HangMan
             return volcab;
 
         }
-        private string VocabWord(string vocab) {
+        // test แล้ว //
+        public string VocabWord(string vocab) {
             string w = "";
 
             for (int i = 0; i < vocab.Length;i++ ) {
@@ -320,7 +326,8 @@ namespace HangMan
             return w;
         
         }
-        private string Word (string mode,string lev) {
+        // test แล้ว //
+        public string Word (string mode,string lev) {
             //Timing.GetIntegerArrayByRandom(n, 1, 50);
             string Vocab="";
             ChMode = lev;
@@ -408,7 +415,8 @@ namespace HangMan
            label4.Text=ShowAnswer();
 
         }
-        private string getMode()
+        // test แล้ว //
+        public string getMode()
         {
             return ChMode;
         }
@@ -467,6 +475,7 @@ namespace HangMan
             }
 
         }
+        // test แล้ว //
         public string FilePic(int n) {
             if (n == 1)
             {
@@ -493,7 +502,8 @@ namespace HangMan
 
 
         }
-        private bool check() {
+        // test แล้ว //
+        public bool check() {
             int k=0;
             for (int i = 0; i < getAnswer().Length; i++)
             {
@@ -508,7 +518,9 @@ namespace HangMan
             }
             return false;
         }
-        private string ShowAnswer() {
+        
+        // test แล้ว //
+        public string ShowAnswer() {
             string w = "";
             for (int i = 0; i < getAnswer().Length;i++ ) {
                 w += getSelCh()[i] + " ";
