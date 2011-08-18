@@ -14,6 +14,9 @@ namespace HangMan
     {
         private string answer = "";
         private char [] selCh = new char [100];
+        private int ClSum = 0;
+        private int Clsumed = 0;
+        private string ChMode = "";
         public Form1()
         {
             InitializeComponent();
@@ -29,6 +32,8 @@ namespace HangMan
             VocabMode.Items.Clear();
             label4.Text = "";
             label5.Text = "";
+            label8.Text = "";
+            Hint.Enabled = false;
             this.addVocab();
             this.addLevel();
         }
@@ -53,10 +58,13 @@ namespace HangMan
 
         private void start_Click(object sender, EventArgs e)
         {
-
+            label8.Text = "";
             label4.Text = Word(VocabMode.Text,Level.Text);
+            label5.Text = "";
+            Hint.Enabled = true;
             ////////////
             on();
+            ClSum = 0;
             
 
             
@@ -294,10 +302,32 @@ namespace HangMan
         private string Word (string mode,string lev) {
             //Timing.GetIntegerArrayByRandom(n, 1, 50);
             string Vocab="";
+            ChMode = lev;
             if (lev =="Easy" ||lev =="Normal"||lev=="Hard"){
-                int n = CountData(mode +".txt");
-                int num = RandNumber(0,n-1);
-                answer = DataWord(mode + ".txt",num);
+                int n = CountData(mode + ".txt");
+                int num = RandNumber(0, n - 1);
+                answer = DataWord(mode + ".txt", num);
+                Hint.Enabled = true;
+                if (lev == "Easy")
+                {               
+                    while (answer.Length>=7){
+                        n = CountData(mode + ".txt");
+                        num = RandNumber(0, n - 1);
+                        answer = DataWord(mode + ".txt", num);
+                    }
+                }
+                else if (lev == "Hard")
+                {
+                    while (answer.Length < 7)
+                    {
+                        n = CountData(mode + ".txt");
+                        num = RandNumber(0, n - 1);
+                        answer = DataWord(mode + ".txt", num);
+                        
+                    }
+                    Hint.Enabled = false;
+                }
+               
                 Vocab = VocabWord(answer);
                 label7.Text = getAnswer();
                 
@@ -310,19 +340,79 @@ namespace HangMan
 
             return selCh;
         }
-       
+        private int getClSum() {
+
+            return ClSum;
+        }
+        private int getClSumed()
+        {
+
+            return Clsumed;
+        }
+
         private void Click(char ch) {
-            label7.Text = getAnswer();
+            
+            int k = 0;
             for (int i = 0; i < getAnswer().Length;i++ )
             {
                 if (ch == getAnswer()[i] || ((ch+32) == getAnswer()[i]))
                 {
                     selCh[i] = ch;
+                    k++;
                 }
 
             }
+           
+            if (k == 0)
+            {
+                ClSum++;
+                Pic();
+            }
+            if (check()){
+                label8.Text = ".......You Win....";
+                off();
+            }
+            
            label4.Text=ShowAnswer();
 
+        }
+        private string getMode()
+        {
+            return ChMode;
+        }
+        private void Pic() {
+
+            label7.Text = getMode()+"   " + getClSum();
+            if (getClSum()==10&&(getMode()=="Easy")){
+                label8.Text = ".......You Lose....";
+                off();          
+            }
+            else if (getClSum() == 7 && (getMode() == "Normal"))
+            {
+                label8.Text = ".......You Lose....";
+                off(); 
+            }
+            else if (getClSum() == 5 && (getMode() == "Hard"))
+            {
+                label8.Text = ".......You Lose....";
+                off();
+            }
+
+        }
+        private bool check() {
+            int k=0;
+            for (int i = 0; i < getAnswer().Length; i++)
+            {
+                if (getSelCh()[i] == getAnswer()[i] || ((getSelCh()[i] + 32) == getAnswer()[i]))
+                {
+                    k++;
+                }
+
+            }
+            if (k== getAnswer().Length){
+                return true;
+            }
+            return false;
         }
         private string ShowAnswer() {
             string w = "";
@@ -544,36 +634,19 @@ namespace HangMan
             Z.Enabled = false;
         }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-      
        
+        private void Hint_Click(object sender, EventArgs e)
+        {
+            int k= RandNumber(0, getAnswer().Length-1);
+            while (getSelCh()[k]!='_'){
+                k = RandNumber(0, getAnswer().Length - 1);
+            }
+            Click(getAnswer()[k]);
+            Hint.Enabled = false;
+        }
+
+
+
 
         
     }
