@@ -118,6 +118,20 @@ namespace HangMan
             Assert.GreaterOrEqual(40, word.Length);
 
         }
+            [Test]
+            public void testWord7()
+            {
+                // Easy //
+                string word = test.Word("animals", "Easy");
+                Assert.LessOrEqual(8, word.Length);
+            }
+            [Test]
+            public void testWord8()
+            {   // Hard //
+                string word = test.Word("animals", "Hard");
+                Assert.GreaterOrEqual(40, word.Length);
+
+            }
         //-----------------------------------------------------------------------------------//
 
         [Test]
