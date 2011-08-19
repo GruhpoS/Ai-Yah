@@ -23,24 +23,12 @@ namespace HangMan
         //  test random number   //
         //-----------------------//
         [Test]
-        public void testRandNumber1()
+        public void testRandNumber()
         {
             int ran = test.RandNumber(0, 3);
-            Assert.AreEqual(0, ran);
+            Assert.Less(-1, ran);
+            Assert.Greater(4, ran);
         }
-        [Test]
-        public void testRandNumber2()
-        {
-            int ran = test.RandNumber(0, 3);
-            Assert.AreEqual(1, ran);
-        }
-        [Test]
-        public void testRandNumber3()
-        {
-            int ran = test.RandNumber(0, 3);
-            Assert.AreEqual(2, ran);
-        }
-
         //-----------------------------------------------------------------------------------//
 
 
@@ -93,28 +81,42 @@ namespace HangMan
         {
             // Easy //
             string word = test.Word("test","Easy");
-            Assert.AreEqual("_ _ _ _ _ ", word);
+            Assert.LessOrEqual(10, word.Length);
         }
+     
         [Test]
         public void testWord2()
         {
-            // Normal //
-            string word = test.Word("test", "Normal");
-            Assert.AreEqual("_ _ _ _ _ _ _ _ _ _ _ _ _ ", word);
+            // Hard //
+            string word = test.Word("test", "Hard");
+            Assert.GreaterOrEqual(26, word.Length);
         }
         [Test]
         public void testWord3()
         {
-            // Normal //
-            string word = test.Word("test", "Normal");
-            Assert.AreEqual("_ _ _ _ _ ", word);
+            // Easy //
+            string word = test.Word("Sports", "Easy");
+            Assert.LessOrEqual(8, word.Length);
         }
         [Test]
         public void testWord4()
+        {   // Hard //
+            string word = test.Word("Sports", "Hard");
+            Assert.GreaterOrEqual(30, word.Length);
+        }
+        [Test]
+        public void testWord5()
         {
-            // Hard //
-            string word = test.Word("test", "Hard");
-            Assert.AreEqual("_ _ _ _ _ _ _ _ _ _ _ _ _ ", word);
+            // Easy //
+            string word = test.Word("countries", "Easy");
+            Assert.LessOrEqual(8, word.Length);
+        }
+            [Test]
+        public void testWord6()
+        {   // Hard //
+            string word = test.Word("countries", "Hard");
+            Assert.GreaterOrEqual(40, word.Length);
+
         }
         //-----------------------------------------------------------------------------------//
 
